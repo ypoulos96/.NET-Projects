@@ -1,0 +1,9 @@
+﻿Michael,18,30
+Mark,26,75
+Christopher,60,180
+Bill,142,155
+Omar,30,95
+Yianni,22,70
+Brandon,45,100 
+Jacob,50,120
+Anthony,62,190

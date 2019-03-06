@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poulos_Assign6", "Poulos_Assign6\Poulos_Assign6.csproj", "{B50626B0-26C9-4BAE-9866-58A75C50E5D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B50626B0-26C9-4BAE-9866-58A75C50E5D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50626B0-26C9-4BAE-9866-58A75C50E5D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50626B0-26C9-4BAE-9866-58A75C50E5D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50626B0-26C9-4BAE-9866-58A75C50E5D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E88E09B-4869-4F30-9E6B-097E836484C8}
+	EndGlobalSection
+EndGlobal
