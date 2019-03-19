@@ -10,12 +10,12 @@ namespace TipCalculator
 {
     public partial class Form1 : Form
     {
-        private int tipPercent;
+        private int tipPercent;         // Percent of bill to be tipped
 
-        private float billAmount;
-        private float tipAmount;
-        private float totalBillAmount;
-        private float splitAmount;
+        private float billAmount;       // Original bill amount
+        private float tipAmount;        // Amount to be tipped
+        private float totalBillAmount;  // Total bill including tip
+        private float splitAmount;      // Total amount per person
 
         public Form1()
         {
@@ -24,8 +24,8 @@ namespace TipCalculator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            tipPercent = tip_Slider.Value;
-            tipValue_Label.Text = tipPercent.ToString() + "%";
+            tipPercent = tip_Slider.Value;      // Set tipPercent equal to initial value of slider
+            tipPercent_Label.Text = tipPercent.ToString() + "%";  // Set text of tip percentage label
             tip_Slider_Scroll(sender, e);
         }
 
@@ -45,38 +45,38 @@ namespace TipCalculator
 
         private void billAmount_UpDown_ValueChanged(object sender, EventArgs e)
         {            
-            // Calculate total values when bill amount is changed
+            // Recalculate total values when Bill Amount is changed
             CalculateValues();
         }
 
         private void split_UpDown_ValueChanged(object sender, EventArgs e)
         {
-            // Calculate total values when Split value is changed
+            // Recalculate total values when Split value is changed
             CalculateValues();
         }
 
         private void tip_Slider_Scroll(object sender, EventArgs e)
         {
             tipPercent = tip_Slider.Value;
-            tipValue_Label.Text = tipPercent.ToString() + "%";
+            tipPercent_Label.Text = tipPercent.ToString() + "%";
 
-            // Determine color of Tip Value text
+            // Determine color of Tip Percent text
             if (tipPercent >= 20)
-                tipValue_Label.ForeColor = Color.LimeGreen;
+                tipPercent_Label.ForeColor = Color.LimeGreen;
 
             else if (tipPercent >= 18)
-                tipValue_Label.ForeColor = Color.GreenYellow;
+                tipPercent_Label.ForeColor = Color.GreenYellow;
 
             else if (tipPercent >= 15 && tip_Slider.Value < 18)
-                tipValue_Label.ForeColor = Color.Yellow;
+                tipPercent_Label.ForeColor = Color.Yellow;
 
             else if (tipPercent > 10 && tip_Slider.Value < 15)
-                tipValue_Label.ForeColor = Color.Orange;
+                tipPercent_Label.ForeColor = Color.Orange;
 
             else
-                tipValue_Label.ForeColor = Color.Red;
+                tipPercent_Label.ForeColor = Color.Red;
 
-            // Calculate total values when slider is moved
+            // Recalculate total values when slider is moved
             CalculateValues();
         }        
     }

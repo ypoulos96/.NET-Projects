@@ -37,7 +37,7 @@
             this.split_UpDown = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.tip_Slider = new System.Windows.Forms.TrackBar();
-            this.tipValue_Label = new System.Windows.Forms.Label();
+            this.tipPercent_Label = new System.Windows.Forms.Label();
             this.totalTipAmount_Label = new System.Windows.Forms.Label();
             this.totalBillAmount_Label = new System.Windows.Forms.Label();
             this.splitAmount_Label = new System.Windows.Forms.Label();
@@ -125,7 +125,7 @@
             0,
             0});
             this.split_UpDown.Name = "split_UpDown";
-            this.split_UpDown.Size = new System.Drawing.Size(43, 29);
+            this.split_UpDown.Size = new System.Drawing.Size(48, 29);
             this.split_UpDown.TabIndex = 6;
             this.split_UpDown.Value = new decimal(new int[] {
             1,
@@ -155,16 +155,16 @@
             this.tip_Slider.Value = 20;
             this.tip_Slider.Scroll += new System.EventHandler(this.tip_Slider_Scroll);
             // 
-            // tipValue_Label
+            // tipPercent_Label
             // 
-            this.tipValue_Label.AutoSize = true;
-            this.tipValue_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tipValue_Label.ForeColor = System.Drawing.Color.LimeGreen;
-            this.tipValue_Label.Location = new System.Drawing.Point(108, 96);
-            this.tipValue_Label.Name = "tipValue_Label";
-            this.tipValue_Label.Size = new System.Drawing.Size(56, 26);
-            this.tipValue_Label.TabIndex = 11;
-            this.tipValue_Label.Text = "20%";
+            this.tipPercent_Label.AutoSize = true;
+            this.tipPercent_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipPercent_Label.ForeColor = System.Drawing.Color.LimeGreen;
+            this.tipPercent_Label.Location = new System.Drawing.Point(108, 96);
+            this.tipPercent_Label.Name = "tipPercent_Label";
+            this.tipPercent_Label.Size = new System.Drawing.Size(56, 26);
+            this.tipPercent_Label.TabIndex = 11;
+            this.tipPercent_Label.Text = "20%";
             // 
             // totalTipAmount_Label
             // 
@@ -229,7 +229,7 @@
             this.Controls.Add(this.splitAmount_Label);
             this.Controls.Add(this.totalBillAmount_Label);
             this.Controls.Add(this.totalTipAmount_Label);
-            this.Controls.Add(this.tipValue_Label);
+            this.Controls.Add(this.tipPercent_Label);
             this.Controls.Add(this.tip_Slider);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.split_UpDown);
@@ -262,7 +262,7 @@
         private System.Windows.Forms.NumericUpDown split_UpDown;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TrackBar tip_Slider;
-        private System.Windows.Forms.Label tipValue_Label;
+        private System.Windows.Forms.Label tipPercent_Label;
         private System.Windows.Forms.Label totalTipAmount_Label;
         private System.Windows.Forms.Label totalBillAmount_Label;
         private System.Windows.Forms.Label splitAmount_Label;
