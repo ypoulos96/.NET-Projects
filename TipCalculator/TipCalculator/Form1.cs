@@ -1,4 +1,12 @@
-﻿using System;
+﻿/***********************************************
+* Programmer: Yiannis Poulos                   *
+*                                              *
+* Date: March 18, 2019                         *
+*                                              *
+* Purpose: A simple Tip Calculator application *
+***********************************************/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
